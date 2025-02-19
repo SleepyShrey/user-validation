@@ -3,7 +3,7 @@
         <server>
             <id>github</id> <!-- This must match the 'id' in your pom.xml -->
             <username>SleepyShrey</username> <!-- Your GitHub username -->
-            <password>${env.mavendeployment}</password> <!-- The GitHub token environment variable -->
+            <password>${{ secrets.mavendeployment }}</password> <!-- The GitHub token environment variable -->
         </server>
     </servers>
 </settings>
